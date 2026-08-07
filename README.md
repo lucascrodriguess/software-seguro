@@ -3,7 +3,7 @@
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
-- Integrantes: Lucas Corrêa Rodrigues
+- Integrantes: Lucas Corrêa Rodrigues, Luis Felipe Calone Silveira
 - Repositório: https://github.com/lucascrodriguess/software-seguro
 - Justificativa: O sistema foi escolhido por ser uma aplicação amplamente utilizada, que envolve múltiplos tipos de usuários, dados sensíveis e integrações externas.
 
