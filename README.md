@@ -19,7 +19,7 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 
 8. [Análise e priorização de riscos](<8. Analise e priorizacao de riscos.md>)
 9. [Tratamento dos riscos com o NIST CSF 2.0](<9. Tratamento dos riscos com o NIST CSF.md>)
-10. [Considerações finais da Etapa 2](<10. Consideracoes finais-E2.md>)
+10. [Considerações finais](<10. Consideracoes finais-E2.md>)
 
 ## 1. Identificação do sistema
 
