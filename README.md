@@ -21,6 +21,13 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 9. [Tratamento dos riscos com o NIST CSF 2.0](<9. Tratamento dos riscos com o NIST CSF.md>)
 10. [Considerações finais](<10. Consideracoes finais-E2.md>)
 
+**Etapa 3 - Projeto de uma arquitetura segura**
+
+11. [Requisitos de segurança e vulnerabilidades](<11. Requisitos de seguranca e vulnerabilidades.md>)
+12. [Diagrama da arquitetura segura](<12. Diagrama da arquitetura segura.md>)
+13. [Decisões de arquitetura](<13. Decisoes de arquitetura.md>)
+14. [Considerações finais](<14. Consideracoes finais-E3.md>)
+
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
