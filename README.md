@@ -15,12 +15,29 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 6. [Casos de abuso](<6. Casos de abuso.md>)
 7. [Considerações finais](<7. Consideracoes finais.md>)
 
+**Etapa 2 - Análise, priorização e tratamento de riscos com o NIST CSF 2.0**
+
+8. [Análise e priorização de riscos](<8. Analise e priorizacao de riscos.md>)
+9. [Tratamento dos riscos com o NIST CSF 2.0](<9. Tratamento dos riscos com o NIST CSF.md>)
+10. [Considerações finais da Etapa 2](<10. Consideracoes finais da Etapa 2.md>)
+
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
-- Integrantes: Lucas Corrêa Rodrigues, Luis Felipe Calone Silveira, Rafael da Silva Moral, Cristhian Kapelinski
 - Repositório: https://github.com/lucascrodriguess/software-seguro
 - Justificativa: O sistema foi escolhido por ser uma aplicação amplamente utilizada, que envolve múltiplos tipos de usuários, dados sensíveis e integrações externas.
+
+### Integrantes e contas do GitHub
+
+Tabela para identificar a autoria dos commits.
+
+| Integrante                    | Conta no GitHub                                                    | Nome nos commits        |
+| ----------------------------- | -------------------------------------------------------------------- | ----------------------- |
+| Lucas Corrêa Rodrigues        | [@lucascrodriguess](https://github.com/lucascrodriguess)             | lucascrodriguess        |
+| Luis Felipe Calone Silveira   | [@Luisxsxsx](https://github.com/Luisxsxsx)                           | Luisxsxsx               |
+| Rafael da Silva Moral         | [@Rafaleel](https://github.com/Rafaleel)                             | Rafael da Silva Moral   |
+| Cristhian Kapelinski          | [@CristhianKapelinski](https://github.com/CristhianKapelinski)       | Cristhian Kapelinski    |
+| Beatriz Machado               | [@INARI18](https://github.com/INARI18)                               | Beatriz Machado         |
 
 ## 2. Descrição do sistema
 
