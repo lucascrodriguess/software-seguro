@@ -18,7 +18,7 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
-- Integrantes: Lucas Corrêa Rodrigues, Luis Felipe Calone Silveira, Rafael da Silva Moral, Cristhian Kapelinski
+- Integrantes: Lucas Corrêa Rodrigues, Luis Felipe Calone Silveira, Rafael da Silva Moral, Cristhian Kapelinski, Beatriz Machado
 - Repositório: https://github.com/lucascrodriguess/software-seguro
 - Justificativa: O sistema foi escolhido por ser uma aplicação amplamente utilizada, que envolve múltiplos tipos de usuários, dados sensíveis e integrações externas.
 
