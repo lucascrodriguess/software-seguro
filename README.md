@@ -13,13 +13,13 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 4. [Visão geral do fluxo](<4. Visao geral do fluxo.md>)
 5. [Modelagem de ameaças com STRIDE](<5. Modelagem de ameacas STRIDE.md>)
 6. [Casos de abuso](<6. Casos de abuso.md>)
-7. [Considerações finais](<7. Consideracoes finais.md>)
+7. [Considerações finais](<7. Consideracoes finais-E1.md>)
 
 **Etapa 2 - Análise, priorização e tratamento de riscos com o NIST CSF 2.0**
 
 8. [Análise e priorização de riscos](<8. Analise e priorizacao de riscos.md>)
 9. [Tratamento dos riscos com o NIST CSF 2.0](<9. Tratamento dos riscos com o NIST CSF.md>)
-10. [Considerações finais da Etapa 2](<10. Consideracoes finais da Etapa 2.md>)
+10. [Considerações finais da Etapa 2](<10. Consideracoes finais-E2.md>)
 
 ## 1. Identificação do sistema
 
