@@ -28,6 +28,16 @@ arquivos, um por seção, e o número do arquivo é o número da seção.
 13. [Decisões de arquitetura](<13. Decisoes de arquitetura.md>)
 14. [Considerações finais](<14. Consideracoes finais-E3.md>)
 
+**Etapa 4 - Código seguro e testes de segurança**
+
+15. [Código seguro e testes de segurança](<15. codigo seguro e testes de seguranca.md>)
+16. [Prática 1 — Controle de autorização](<16. Pratica 1 Controle de autorizacao.md>)
+17. [Prática 2 — Validação de entrada e integridade](<17. Pratica 2 Validacao de entrada e integridade.md>)
+
+**Etapa 5 - Verificação de vulnerabilidades**
+
+18. [Verificação de vulnerabilidades com o OWASP ZAP](<18. Verificacao de vulnerabilidades.md>) — evidências em [`evidencias/etapa-5/`](evidencias/etapa-5/)
+
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
