@@ -48,6 +48,8 @@ flowchart LR
     API --> MAPA
 ```
 
+A mesma figura está versionada como imagem em [`diagramas/etapa-1/visao-geral-do-sistema.png`](../diagramas/etapa-1/visao-geral-do-sistema.png), com o arquivo-fonte ao lado, em [`visao-geral-do-sistema.mmd`](../diagramas/etapa-1/visao-geral-do-sistema.mmd).
+
 ### 4.3 Onde estão as fronteiras de confiança
 
 Uma **fronteira de confiança** é o ponto em que a informação sai do nosso controle ou chega de alguém em quem não podemos confiar totalmente. São nesses pontos que a maioria das ameaças aparece:

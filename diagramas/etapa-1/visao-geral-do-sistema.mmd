@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph USERS["Usuários"]
+        C["Cliente"]
+        R["Restaurante"]
+        E["Entregador"]
+        A["Administrador"]
+    end
+
+    subgraph SIST["Nosso sistema"]
+        APP["App móvel e site"]
+        API["API / Backend"]
+        BD[("Banco de dados")]
+        LOG["Registros (logs)"]
+    end
+
+    subgraph EXT["Serviços externos"]
+        PAG["Gateway de pagamento"]
+        MAPA["API de mapas"]
+    end
+
+    C --> APP
+    R --> APP
+    E --> APP
+    A --> APP
+    APP --> API
+    API --> BD
+    API --> LOG
+    API --> PAG
+    API --> MAPA

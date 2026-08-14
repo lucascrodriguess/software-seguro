@@ -1,0 +1,50 @@
+flowchart LR
+    subgraph USERS["Usuários"]
+        C["App Cliente / Entregador"]
+        R["App Restaurante"]
+        A["Painel Admin (Web)"]
+    end
+
+    subgraph PERIM["Borda perimetral"]
+        WAF["WAF e API Gateway"]
+    end
+
+    subgraph SIST["Nosso sistema (Serviços)"]
+        AUTH["Serviço de Autenticação e MFA"]
+        GUARD["Guard de Autorização"]
+        API_PEDIDOS["API de Pedidos"]
+        API_ENTREGAS["API de Entregas"]
+        API_ADMIN["API Administrativa"]
+    end
+
+    subgraph DATA["Dados e registros"]
+        BD[("Banco de dados")]
+        LOG[("Registros de auditoria (logs)")]
+    end
+
+    subgraph EXT["Serviços externos"]
+        PAG["Gateway de pagamento"]
+        MAPA["API de mapas"]
+    end
+
+    C --> WAF
+    R --> WAF
+    A --> WAF
+
+    WAF --> AUTH
+    WAF --> GUARD
+
+    GUARD --> API_PEDIDOS
+    GUARD --> API_ENTREGAS
+    GUARD --> API_ADMIN
+
+    API_PEDIDOS --> BD
+    API_ENTREGAS --> BD
+    API_ADMIN --> BD
+
+    API_PEDIDOS --> LOG
+    API_ADMIN --> LOG
+    AUTH --> LOG
+
+    API_PEDIDOS --> PAG
+    API_ENTREGAS --> MAPA

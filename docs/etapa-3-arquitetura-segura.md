@@ -57,6 +57,8 @@ flowchart LR
     API_ENTREGAS --> MAPA
 ```
 
+O diagrama acima é gerado a partir do código Mermaid deste arquivo. A mesma figura está versionada como imagem em [`diagramas/etapa-3/arquitetura-segura.png`](../diagramas/etapa-3/arquitetura-segura.png), com o arquivo-fonte ao lado, em [`arquitetura-segura.mmd`](../diagramas/etapa-3/arquitetura-segura.mmd).
+
 Três caixas do diagrama precisam de apresentação, porque não existiam na Etapa 1:
 
 - **WAF e API Gateway** formam a *borda perimetral*, o primeiro ponto do nosso sistema que o tráfego encontra. O API Gateway é a porta única por onde toda requisição entra, em vez de cada serviço ser acessado diretamente. O WAF (*Web Application Firewall*) é um filtro que inspeciona essas requisições e barra as que têm cara de ataque ou que chegam em volume anormal.
