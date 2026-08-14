@@ -1,42 +1,39 @@
 # Sistema de delivery Comer-Tchê!
 
-Trabalho da disciplina de Engenharia de Software Seguro. O documento está dividido em
-arquivos, um por seção, e o número do arquivo é o número da seção.
+Trabalho da disciplina de Engenharia de Software Seguro. O conteúdo está dividido em
+arquivos numerados por ordem de leitura. Cada arquivo reúne uma ou mais seções do
+documento, e a numeração das seções é contínua de 1 a 19, como indicado abaixo.
 
 ## Índice
 
 **Etapa 1 — Casos de abuso e modelagem de ameaças com STRIDE**
 
-1. Identificação do sistema — nesta página, abaixo
-2. Descrição do sistema — nesta página, abaixo
-3. [Usuários, ativos e pontos de interação](<3. Usuarios, ativos e pontos de interacao.md>)
-4. [Visão geral do fluxo](<4. Visao geral do fluxo.md>)
-5. [Modelagem de ameaças com STRIDE](<5. Modelagem de ameacas STRIDE.md>)
-6. [Casos de abuso](<6. Casos de abuso.md>)
-7. [Considerações finais](<7. Consideracoes finais-E1.md>)
+- Seções 1 e 2: identificação e descrição do sistema, nesta página, abaixo
+- Seção 3: [Usuários, ativos e pontos de interação](<1. Usuarios, ativos e pontos de interacao.md>)
+- Seção 4: [Visão geral do fluxo](<2. Visao geral do fluxo.md>)
+- Seções 5 a 7: [Modelagem de ameaças com STRIDE, casos de abuso e considerações finais](<3. E1. Modelagem de ameacas e Casos de abuso.md>)
 
-**Etapa 2 - Análise, priorização e tratamento de riscos com o NIST CSF 2.0**
+**Etapa 2 — Análise, priorização e tratamento de riscos com o NIST CSF 2.0**
 
-8. [Análise e priorização de riscos](<8. Analise e priorizacao de riscos.md>)
-9. [Tratamento dos riscos com o NIST CSF 2.0](<9. Tratamento dos riscos com o NIST CSF.md>)
-10. [Considerações finais](<10. Consideracoes finais-E2.md>)
+- Seção 8: [Análise e priorização de riscos](<4. Analise e priorizacao de riscos.md>)
+- Seções 9 e 10: [Tratamento dos riscos com o NIST CSF 2.0 e considerações finais](<5. E2. Tratamento dos riscos com o NIST CSF.md>)
 
-**Etapa 3 - Projeto de uma arquitetura segura**
+**Etapa 3 — Projeto de uma arquitetura segura**
 
-11. [Requisitos de segurança e vulnerabilidades](<11. Requisitos de seguranca e vulnerabilidades.md>)
-12. [Diagrama da arquitetura segura](<12. Diagrama da arquitetura segura.md>)
-13. [Decisões de arquitetura](<13. Decisoes de arquitetura.md>)
-14. [Considerações finais](<14. Consideracoes finais-E3.md>)
+- Seção 11: [Requisitos de segurança e vulnerabilidades catalogadas](<6. Requisitos de seguranca e vulnerabilidades.md>)
+- Seções 12 a 14: [Diagrama da arquitetura segura, decisões de arquitetura e considerações finais](<7. E3. Arquitetura segura.md>)
 
-**Etapa 4 - Código seguro e testes de segurança**
+**Etapa 4 — Código seguro e testes de segurança**
 
-15. [Código seguro e testes de segurança](<15. codigo seguro e testes de seguranca.md>)
-16. [Prática 1 — Controle de autorização](<16. Pratica 1 Controle de autorizacao.md>)
-17. [Prática 2 — Validação de entrada e integridade](<17. Pratica 2 Validacao de entrada e integridade.md>)
+- Seções 15 a 17: [Escolha das práticas, controle de autorização e validação de entrada](<8. E4. Codigo seguro e testes de seguranca.md>)
 
-**Etapa 5 - Verificação de vulnerabilidades**
+**Etapa 5 — Verificação de vulnerabilidades**
 
-18. [Verificação de vulnerabilidades com o OWASP ZAP](<18. Verificacao de vulnerabilidades.md>) — evidências em [`evidencias/etapa-5/`](evidencias/etapa-5/)
+- Seção 18: [Verificação com o OWASP ZAP](<9. E5. Verificacao de vulnerabilidades.md>), com as evidências da execução em [`evidencias/etapa-5/`](evidencias/etapa-5/)
+
+**Etapa 6 — Monitoramento e detecção de intrusões**
+
+- Seção 19: [Regras de detecção e resposta a incidentes](<10. E6. Monitoramento e Deteccao de Intrusoes.md>)
 
 ## 1. Identificação do sistema
 
