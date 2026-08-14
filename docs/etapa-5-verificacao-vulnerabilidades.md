@@ -54,10 +54,10 @@ A sessão gerou o relatório do ZAP em dois formatos e duas capturas de tela, to
 
 | Arquivo | Conteúdo |
 | ------- | -------- |
-| [`relatorio-zap.html`](evidencias/etapa-5/relatorio-zap.html) | Relatório completo gerado pelo ZAP |
-| [`relatorio-zap.json`](evidencias/etapa-5/relatorio-zap.json) | Mesmos dados em JSON, com todas as instâncias |
-| [`capturas-de-tela/01-juiceshop-no-ar.png`](evidencias/etapa-5/capturas-de-tela/01-juiceshop-no-ar.png) | Alvo em execução antes da varredura |
-| [`capturas-de-tela/02-relatorio-zap-resumo.png`](evidencias/etapa-5/capturas-de-tela/02-relatorio-zap-resumo.png) | Resumo e lista de alertas no relatório |
+| [`relatorio-zap.html`](../evidencias/etapa-5/relatorio-zap.html) | Relatório completo gerado pelo ZAP |
+| [`relatorio-zap.json`](../evidencias/etapa-5/relatorio-zap.json) | Mesmos dados em JSON, com todas as instâncias |
+| [`capturas-de-tela/01-juiceshop-no-ar.png`](../evidencias/etapa-5/capturas-de-tela/01-juiceshop-no-ar.png) | Alvo em execução antes da varredura |
+| [`capturas-de-tela/02-relatorio-zap-resumo.png`](../evidencias/etapa-5/capturas-de-tela/02-relatorio-zap-resumo.png) | Resumo e lista de alertas no relatório |
 
 Os hashes SHA-256 abaixo comprovam que os arquivos não foram alterados depois da execução. A lista também está em `evidencias/etapa-5/SHA256SUMS`, e a conferência é `cd evidencias/etapa-5 && sha256sum -c SHA256SUMS`.
 
