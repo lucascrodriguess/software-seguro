@@ -19,9 +19,9 @@ O trabalho inteiro desta disciplina é, na prática, uma passagem por esse pipel
 | **Análise de risco** | Cálculo, priorização e tratamento dos riscos com o NIST CSF 2.0 | Registro de 11 riscos com probabilidade, impacto e nível; plano de tratamento, ordem de implementação e residual estimado, nas seções 8 a 10 | Todo risco crítico com estratégia, responsável e forma de verificação definidos |
 | **Requisitos e arquitetura** | Derivação de requisitos verificáveis e registro das decisões de arquitetura | RS01 a RS04 com critério de verificação, quatro decisões e o diagrama da arquitetura, nas seções 11 a 14 | Cada risco crítico com pelo menos um requisito verificável e uma decisão que o trata |
 | **Implementação segura** | Escolha de práticas de código seguro, com os testes escritos antes do código | Pseudocódigo do controle de autorização e da validação de entrada, com os testes TS01 a TS08, nas seções 15 a 17 | Testes definidos antes da implementação, cobrindo um caso válido e um caso malicioso |
-| **Testes automatizados** | Execução de TS01 a TS08 a cada alteração enviada ao repositório | *Atividade proposta.* Ainda não executada, porque o sistema não está implementado | Todos os testes de autorização e de integridade aprovados |
-| **Análise de código e dependências** | Análise estática do código (SAST, que examina o código sem executá-lo) e análise das bibliotecas de terceiros (SCA, que compara as versões usadas com listas públicas de vulnerabilidades) | *Atividade proposta.* Ainda não executada | Nenhuma vulnerabilidade de severidade alta ou crítica em aberto |
-| **Teste dinâmico** | Varredura da aplicação em execução com o OWASP ZAP | Relatório, capturas de tela e hashes em `evidencias/etapa-5/`, com três achados analisados, na seção 18 | Achados de severidade média ou superior analisados, com correção proposta ou descarte justificado |
+| **Testes automatizados** | Execução de TS01 a TS09 a cada alteração enviada ao repositório | Job `C1` do pipeline no [repositório do sistema](https://github.com/comer-tche/comer-tche/actions), que sobe a aplicação e executa os nove testes | Todos os testes de autorização e de integridade aprovados |
+| **Análise de código e dependências** | Varredura do histórico em busca de segredo versionado e análise das bibliotecas de terceiros (SCA, que compara as versões usadas com listas públicas de vulnerabilidades) | Jobs `C2` (gitleaks) e `C3` (`npm audit`) do pipeline | Nenhum segredo no repositório e nenhuma vulnerabilidade de severidade alta ou crítica em aberto |
+| **Teste dinâmico** | Varredura da aplicação em execução com o OWASP ZAP | Relatório, capturas de tela e hashes em `evidencias/etapa-5/`, com três achados analisados, na seção 18; e o job `C4`, que repete a varredura contra o próprio sistema a cada alteração | Achados de severidade média ou superior analisados, com correção proposta ou descarte justificado |
 | **Implantação** | Publicação da versão aprovada em produção | *Atividade proposta.* Ainda não executada | Aprovação em todos os momentos anteriores, e nenhum segredo presente no código ou no repositório |
 | **Monitoramento e resposta** | Registro de eventos, regras de detecção e fluxo de resposta a incidentes | Três regras de detecção e o fluxo de quatro fases após o alerta, na seção 19 | Regras ativas sobre os eventos previstos no controle de registro do risco R06 |
 
@@ -37,15 +37,15 @@ As quatro condições abaixo interrompem o pipeline. Nenhuma delas é genérica:
 
 **C4. Achado de severidade alta na varredura dinâmica sem análise registrada.** O objetivo não é zerar o relatório da ferramenta, e sim garantir que ninguém publique com um achado relevante ignorado. Um alerta pode ser descartado como falso positivo, como aconteceu com o Timestamp Disclosure na seção 18.5, desde que o motivo do descarte esteja escrito.
 
-### 20.4 O que ainda não é executado
+### 20.4 Do pipeline proposto ao pipeline em execução
 
-Três momentos do pipeline são atividades propostas, e não evidências produzidas. Registrar isso é parte da honestidade da proposta:
+O pipeline descrito aqui deixou de ser apenas uma proposta. O sistema foi implementado no repositório [comer-tche](https://github.com/comer-tche/comer-tche), e as quatro condições da seção 20.3 são hoje quatro jobs que rodam a cada alteração enviada.
 
-- **Testes automatizados.** Os testes TS01 a TS08 estão definidos na Etapa 4, mas nunca foram executados, porque o Comer-Tchê! é um sistema modelado e não implementado.
-- **Análise de código e dependências.** Não existe código-fonte para analisar nem árvore de dependências para comparar com as listas de vulnerabilidades conhecidas.
-- **Implantação.** Não há ambiente de produção.
+A ordem dos commits daquele repositório reproduz a ordem desta análise, e é o que sustenta a afirmação de que a segurança veio antes do código: o primeiro commit é a aplicação sem nenhum controle, com as falhas correspondentes a R01, R03, R04, R07 e R10 marcadas no próprio código, e cada commit seguinte aplica um controle citando a seção que o originou, seguindo a ordem de implementação da seção 9.5.
 
-O único momento com evidência gerada por execução real, e não por documento, é o teste dinâmico da Etapa 5, feito sobre uma aplicação deliberadamente vulnerável justamente porque não temos a nossa.
+Uma decisão de arquitetura nasceu da implementação e merece registro, porque contradiz a leitura literal da Decisão 1. O sistema foi feito em Next.js, cujo mecanismo de middleware parece o lugar natural para a validação centralizada de autorização. Ele não é. A CVE-2025-29927, de severidade 9.1, permitia pular o middleware inteiro com um cabeçalho, e sua descrição oficial afirma que a falha atinge quem faz a checagem de autorização ali. O CWE dessa vulnerabilidade é o CWE-285, exatamente o que a seção 11.2 havia mapeado para o R10. A centralização exigida pela Decisão 1 foi obtida por um módulo único chamado dentro de cada rota, e o middleware do framework não decide acesso.
+
+Um momento continua sem execução: a **implantação**, porque não há ambiente de produção, e publicar na internet um sistema cujo primeiro commit é deliberadamente vulnerável não seria adequado.
 
 ### 20.5 Integração entre as etapas
 
