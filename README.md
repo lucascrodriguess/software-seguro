@@ -35,6 +35,10 @@ documento, e a numeração das seções é contínua de 1 a 19, como indicado ab
 
 - Seção 19: [Regras de detecção e resposta a incidentes](<10. E6. Monitoramento e Deteccao de Intrusoes.md>)
 
+**Etapa 7 — DevSecOps**
+
+- Seção 20: [Pipeline DevSecOps e condições de bloqueio](<11. E7. Pipeline DevSecOps.md>)
+
 ## 1. Identificação do sistema
 
 - Nome do sistema: Comer-Tchê!
