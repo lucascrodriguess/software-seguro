@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="diagramas/logo.png" alt="Comer-Tchê!" width="180">
+</p>
+
 # Sistema de delivery Comer-Tchê!
 
 Trabalho da disciplina de Engenharia de Software Seguro. Os documentos das etapas 1 a 5 estão em `docs/`, os das etapas 6 e 7 em `roteiros/`, e as evidências da verificação em `evidencias/`. A numeração das seções é contínua de 1 a 20, e o índice abaixo indica em qual arquivo cada seção está.
