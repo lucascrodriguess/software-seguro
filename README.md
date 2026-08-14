@@ -1,8 +1,6 @@
 # Sistema de delivery Comer-Tchê!
 
-Trabalho da disciplina de Engenharia de Software Seguro. O conteúdo está dividido em
-arquivos numerados por ordem de leitura. Cada arquivo reúne uma ou mais seções do
-documento, e a numeração das seções é contínua de 1 a 19, como indicado abaixo.
+Trabalho da disciplina de Engenharia de Software Seguro. O conteúdo está dividido em arquivos numerados por ordem de leitura. Cada arquivo reúne uma ou mais seções do documento, e a numeração das seções é contínua de 1 a 19, como indicado abaixo.
 
 ## Índice
 
